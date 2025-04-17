@@ -22,7 +22,7 @@ li{
     list-style: none;
 }
 
-h1, h2, h3, h4 p{
+h1, h2, h3, h4, h5 p{
     margin: 0;
 }
 
@@ -177,7 +177,7 @@ body{
     gap: 20px;
 }
 
-.header_buttons a{
+.header_buttons-activities{
     font-size: 32px;
     font-weight: 800;
     padding: 10px 20px;
@@ -185,7 +185,12 @@ body{
     text-transform: uppercase;
 }
 
-.header_buttons-book{
+.buttons-book{
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
     background-color: #2b2a29;
     color: #fff;
 }
@@ -274,4 +279,65 @@ body{
     padding: 10px 20px;
     text-transform: uppercase;
     background-color: rgb(255, 255, 255. .3);
+}
+
+.activities {
+    margin-top: 150px;
+}
+
+.activities_subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.activities__info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+
+}
+.activities_title {
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    flex-basis: 50%;
+}
+
+.activities__text {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.activities__text .buttons-book {
+    align-self: start;
+}
+.activities__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.activities__item {
+    border: 1px solid #2B2A29;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities__item h5{
+    font-size: 26px;
+    font-weight: 700;
+    max-width: 115px;
+    text-align: center;
+}
+
+.site-images{
+    width: 100%;
+    margin-top: 150px;
+
 }
